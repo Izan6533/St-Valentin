@@ -13,10 +13,15 @@ body {
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    position: relative;
 }
 
-h1 {
+h1, h2 {
     color: #ff4d6d;
+}
+
+.buttons {
+    margin-top: 30px;
 }
 
 button {
@@ -28,9 +33,10 @@ button {
     cursor: pointer;
     background-color: #ff4d6d;
     color: white;
-    transition: transform 0.2s;
+    transition: 0.2s;
 }
 
-button:hover {
-    transform: scale(1.1);
+#no {
+    background-color: #999;
+    position: absolute;
 }
