@@ -60,4 +60,20 @@ button {
         font-size: 16px;
     }
 }
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 20px;
+    animation: fall linear forwards;
+    color: #ff4d6d;
+    z-index: 999;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
+
 
