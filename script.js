@@ -6,12 +6,16 @@ function yes() {
 function moveNo() {
     const noBtn = document.getElementById("no");
 
-    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+    const maxX = window.innerWidth - noBtn.offsetWidth;
+    const maxY = window.innerHeight - noBtn.offsetHeight;
+
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
 
     noBtn.style.left = x + "px";
     noBtn.style.top = y + "px";
 }
+
 
 // Cœurs animés
 function createHeart() {
@@ -31,3 +35,4 @@ function createHeart() {
 
 // Génère des cœurs toutes les 300ms
 setInterval(createHeart, 300);
+
